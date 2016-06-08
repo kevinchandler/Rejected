@@ -1,7 +1,7 @@
-require 'test_helper'
+require File.expand_path("../../test_helper", __FILE__)
 
 class RejectionLetterTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "required fields" do
+    assert true
+  end
 end
