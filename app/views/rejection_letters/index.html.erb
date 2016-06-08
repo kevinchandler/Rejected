@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Rejection Letters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rejection_letters.each do |rejection_letter| %>
+      <tr>
+        <td><%= link_to 'Show', rejection_letter %></td>
+        <td><%= link_to 'Edit', edit_rejection_letter_path(rejection_letter) %></td>
+        <td><%= link_to 'Destroy', rejection_letter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rejection letter', new_rejection_letter_path %>

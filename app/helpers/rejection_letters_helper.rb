@@ -1,0 +1,2 @@
+module RejectionLettersHelper
+end

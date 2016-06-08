@@ -1,0 +1,17 @@
+<%= form_for(@rejection_letter) do |f| %>
+  <% if @rejection_letter.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rejection_letter.errors.count, "error") %> prohibited this rejection_letter from being saved:</h2>
+
+      <ul>
+      <% @rejection_letter.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
